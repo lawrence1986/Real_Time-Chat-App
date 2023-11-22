@@ -10,17 +10,17 @@
 
 <hr></hr>
 <br>Steps in Running the Web Chat Application</br>
-<h3>
-<l1> 1.	Clone the repo <b>https://github.com/lawrence1986/Real_Time-Chat-App.git</b></l1>
-<l1> 2.	Navigate to repo directory</l1>
-<l1> 3.	Enable the virtual environment - <b>python3 -m venv WebChat</b> (WebChat is the name of the env, it can be given any name)</l1>
-<l1> 4.	Activate the virtual environment (WebChat) - <b>source WebChat/bin/activate</b></l1>
-<l1> 5.	Install the requirement dependencies - <b>pip install -r requirements.txt</b></l1>
-<l1> 6.	Navigate to the myproject directory - <b>cd myproject/</b></l1>
-<l1> 7.	Migration process - <b>python manage.py migrate</b></l1>
-<l1> 8.	Startup the Chat App - <b>python manage.py</b> startapp WebChat</l1>
 
-<h2>RUN SERVER PROCESS</h2>
+<l1> 1.	Clone the repo <b>https://github.com/lawrence1986/Real_Time-Chat-App.git</b></l1><br>
+<l1> 2.	Navigate to repo directory</l1><br>
+<l1> 3.	Enable the virtual environment - <b>python3 -m venv WebChat</b> (WebChat is the name of the env, it can be given any name)</l1><br>
+<l1> 4.	Activate the virtual environment (WebChat) - <b>source WebChat/bin/activate</b></l1><br>
+<l1> 5.	Install the requirement dependencies - <b>pip install -r requirements.txt</b></l1><br>
+<l1> 6.	Navigate to the myproject directory - <b>cd myproject/</b></l1><br>
+<l1> 7.	Migration process - <b>python manage.py migrate</b></l1><br>
+<l1> 8.	Startup the Chat App - <b>python manage.py</b> startapp WebChat</l1><br>
+
+<h3>RUN SERVER PROCESS</h3>
 
 <l1> 9.	<b>python manage.py runserver</b></l1>
 
