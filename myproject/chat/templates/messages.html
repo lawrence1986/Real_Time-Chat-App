@@ -14,6 +14,7 @@
     </head>
 	<!--Coded With Love By Mutiullah Samim-->
 	<body>
+	<a href="{% url 'logout' %}">Logout</a>	
     {% if user.is_authenticated %}
         <h1 style="text-align: end; padding-right: 10px">Logged in as : {{ user.username }}</h1>
         <input type="hidden" id="logged-in-user" value="{{ user.id }}">
@@ -152,6 +153,5 @@
 		</div>
 
         <script src="{% static 'js/messages.js' %}"></script>
-
 	</body>
 </html>

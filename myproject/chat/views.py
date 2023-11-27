@@ -1,7 +1,8 @@
 from django.contrib.auth.decorators import login_required
-from django.shortcuts import render
-
-# Create your views here.
+from django.shortcuts import render, redirect
+from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
+from django.contrib.auth import login, logout
+from django.contrib.auth.models import User
 from chat.models import Thread
 
 
@@ -12,3 +13,24 @@ def messages_page(request):
         'Threads': threads
     }
     return render(request, 'messages.html', context)
+
+
+def user_login(request):
+    if request.method == 'POST':
+        form = AuthenticationForm(request, data=request.POST)
+        if form.is_valid():
+            user = form.get_user()
+            login(request, user)
+            return redirect('messages')  # Redirect to the home page or any other desired page
+    else:
+        form = AuthenticationForm()
+
+    return render(request, 'login.html', {'form': form})
+
+def user_search(request):
+    query = request.GET.get('q', '')
+    users = User.objects.filter(username__icontains=query)
+    return render(request, 'user_search.html', {'users': users, 'query': query})
+def user_logout(request):
+    logout(request)
+    return redirect('login')

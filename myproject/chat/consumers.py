@@ -30,6 +30,8 @@ class ChatConsumer(AsyncConsumer):
         send_to_id = received_data.get('send_to')
         thread_id = received_data.get('thread_id')
 
+
+
         if not msg:
             print('Error:: empty message')
             return False
@@ -103,3 +105,33 @@ class ChatConsumer(AsyncConsumer):
     @database_sync_to_async
     def create_chat_message(self, thread, user, msg):
         ChatMessage.objects.create(thread=thread, user=user, message=msg)
+
+
+class LoginConsumer(AsyncConsumer):
+    async def connect(self):
+        await self.accept()
+
+    async def disconnect(self, close_code):
+        pass
+
+    async def receive(self, text_data):
+        received_data = json.loads(text_data)
+        username = received_data.get('username')
+        password = received_data.get('password')
+
+        user = await self.authenticate_user(username, password)
+
+        if user:
+            await self.send(text_data=json.dumps({'status': 'success'}))
+        else:
+            await self.send(text_data=json.dumps({'status': 'error'}))
+
+    @database_sync_to_async
+    def authenticate_user(self, username, password):
+        try:
+            user = User.objects.get(username=username)
+            if user.check_password(password):
+                return user
+        except User.DoesNotExist:
+            pass
+        return None

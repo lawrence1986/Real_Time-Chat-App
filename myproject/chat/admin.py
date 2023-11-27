@@ -3,6 +3,8 @@ from django import forms
 from django.core.exceptions import ValidationError
 from django.db.models import Q
 from .models import Thread, ChatMessage
+from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
+from django.contrib.auth.models import User
 
 admin.site.register(ChatMessage)
 
