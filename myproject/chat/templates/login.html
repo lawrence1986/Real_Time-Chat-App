@@ -4,12 +4,79 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chat App | Login</title>
-  </head>
-<body>
-  <h1>Chat App Login</h1>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-  <form action="{% url 'login' %}" method="post">
-    {% csrf_token %}
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    h1 {
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+      margin-top: 20px; /* Added margin at the top */
+      font-size: 24px; /* Increased font size for emphasis */
+    }
+
+    form {
+      font-family: 'Roboto', sans-serif;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      padding: 30px;
+      width: 400px; /* Increased width for a landscape format */
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      color: #555;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+
+    input[type="submit"] {
+      background-color: #4caf50;
+      color: #fff;
+      cursor: pointer;
+      font-size: 18px;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Chat App Login</h1>
+  </div>
+
+  <form action="/chat/user_login/" method="post">
+    <input type="hidden" name="csrfmiddlewaretoken" value="bBtYbxitU8dVr10dS5vwt9LClEKpCVRYFRMBhKwaCL4kvUGnaTg4gpUbr4RQRRgt">
 
     <label for="username">Username:</label>
     <input type="text" id="username" name="username" required>
@@ -19,10 +86,6 @@
 
     <input type="submit" value="Login">
   </form>
-
-  {% if error %}
-    <p style="color: red;">{{ error }}</p>
-  {% endif %}
-
 </body>
 </html>
+
