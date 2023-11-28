@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chat App | Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY4NlHrKG3N5l/6I+TzUJQ5P02M/AykNQcpIqT" crossorigin="anonymous">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
@@ -18,24 +19,48 @@
       height: 100vh;
     }
 
+    .login-container {
+      display: flex;
+      max-width: 800px; /* Adjust the max-width as needed */
+      width: 100%;
+    }
+
+    .left-section {
+      flex: 1;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .left-section .logo {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+
+    .right-section {
+      flex: 1;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      box-sizing: border-box;
+    }
+
     h1 {
       font-family: 'Roboto', sans-serif;
       text-align: center;
       color: #333;
       margin-bottom: 20px;
-      margin-top: 20px; /* Added margin at the top */
-      font-size: 24px; /* Increased font size for emphasis */
+      font-size: 24px;
     }
 
     form {
       font-family: 'Roboto', sans-serif;
-      background-color: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-      padding: 30px;
-      width: 400px; /* Increased width for a landscape format */
-      max-width: 100%;
-      box-sizing: border-box;
+      width: 100%;
     }
 
     label {
@@ -45,7 +70,7 @@
     }
 
     input {
-      width: 100%;
+      width: calc(100% - 24px);
       padding: 12px;
       margin-bottom: 20px;
       border: 1px solid #ccc;
@@ -68,24 +93,37 @@
     input[type="submit"]:hover {
       background-color: #45a049;
     }
+
+    .logo img {
+      width: 50px;
+      height: 50px;
+    }
   </style>
 </head>
 <body>
-  <div>
-    <h1>Chat App Login</h1>
+  <div class="login-container">
+    <div class="left-section">
+      <div class="logo">
+        <!-- Replace the placeholder with an appropriate chat icon -->
+        <i class="fas fa-comment-dots"></i>
+      </div>
+      <h1>Chat App Login</h1>
+    </div>
+
+    <div class="right-section">
+      <form action="/chat/user_login/" method="post">
+        <input type="hidden" name="csrfmiddlewaretoken" value="bBtYbxitU8dVr10dS5vwt9LClEKpCVRYFRMBhKwaCL4kvUGnaTg4gpUbr4RQRRgt">
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="submit" value="Login">
+      </form>
+    </div>
   </div>
-
-  <form action="/chat/user_login/" method="post">
-    <input type="hidden" name="csrfmiddlewaretoken" value="bBtYbxitU8dVr10dS5vwt9LClEKpCVRYFRMBhKwaCL4kvUGnaTg4gpUbr4RQRRgt">
-
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" required>
-
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required>
-
-    <input type="submit" value="Login">
-  </form>
 </body>
 </html>
 
