@@ -32,6 +32,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      text-align: center;
       position: relative;
     }
 
@@ -51,7 +52,7 @@
     }
 
     h1 {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Pacifico', cursive;
       text-align: center;
       color: #333;
       margin-bottom: 20px;
@@ -94,18 +95,55 @@
       background-color: #45a049;
     }
 
+    .logo {
+    margin-bottom: 20px; /* Add margin to separate the logo and heading */
+  }
     .logo img {
-      width: 50px;
-      height: 50px;
+      width: 180px;
+      height: 180px;
     }
   </style>
+  <style>
+  /* ... (previous styles) ... */
+
+  .left-section {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+  }
+
+  .logo {
+    margin-bottom: 20px; /* Add margin to separate the logo and heading */
+  }
+
+  .logo img {
+    width: 80px; /* Adjust the width as needed */
+    height: 80px; /* Adjust the height as needed */
+  }
+
+  h1 {
+    font-family: 'Pacifico', cursive; /* Use the 'Pacifico' font or another stylish font */
+    color: #333;
+    font-size: 24px;
+    margin: 0; /* Remove margin to avoid extra space */
+  }
+
+  /* ... (remaining styles) ... */
+</style>
 </head>
 <body>
   <div class="login-container">
     <div class="left-section">
       <div class="logo">
+      
         <!-- Replace the placeholder with an appropriate chat icon -->
-        <i class="fas fa-comment-dots"></i>
+        <img src="demo.png" alt="Chat Icon" style="width: 120px; height: 120px;">
+        <!--<i class="fas fa-comment-dots"></i> -->
       </div>
       <h1>Chat App Login</h1>
     </div>
