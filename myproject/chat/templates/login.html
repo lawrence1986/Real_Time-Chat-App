@@ -4,25 +4,162 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chat App | Login</title>
-  </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY4NlHrKG3N5l/6I+TzUJQ5P02M/AykNQcpIqT" crossorigin="anonymous">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      display: flex;
+      max-width: 800px; /* Adjust the max-width as needed */
+      width: 100%;
+    }
+
+    .left-section {
+      flex: 1;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .left-section .logo {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+
+    .right-section {
+      flex: 1;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    form {
+      font-family: 'Roboto', sans-serif;
+      width: 100%;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      color: #555;
+    }
+
+    input {
+      width: calc(100% - 24px);
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+
+    input[type="submit"] {
+      background-color: #4caf50;
+      color: #fff;
+      cursor: pointer;
+      font-size: 18px;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    .logo {
+    margin-bottom: 20px; /* Add margin to separate the logo and heading */
+  }
+    .logo img {
+      width: 180px;
+      height: 180px;
+    }
+  </style>
+  <style>
+  /* ... (previous styles) ... */
+
+  .left-section {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+  }
+
+  .logo {
+    margin-bottom: 20px; /* Add margin to separate the logo and heading */
+  }
+
+  .logo img {
+    width: 80px; /* Adjust the width as needed */
+    height: 80px; /* Adjust the height as needed */
+  }
+
+  h1 {
+    font-family: 'Pacifico', cursive; /* Use the 'Pacifico' font or another stylish font */
+    color: #333;
+    font-size: 24px;
+    margin: 0; /* Remove margin to avoid extra space */
+  }
+
+  /* ... (remaining styles) ... */
+</style>
+</head>
 <body>
-  <h1>Chat App Login</h1>
+  <div class="login-container">
+    <div class="left-section">
+      <div class="logo">
+  <img src="https://github.com/lawrence1986/Real_Time-Chat-App/blob/main/myproject/chat/templates/demo.png?raw=true" alt="Chat Icon" style="width: 250px; height: 250px;">
+</div>
+      <h1></h1>
+    </div>
 
-  <form action="{% url 'login' %}" method="post">
-    {% csrf_token %}
+    <div class="right-section">
+	    <center><p>Welcome, Please Sign In!</p> <!-- Added message --></center>
+      <form action="/chat/user_login/" method="post">
+        <input type="hidden" name="csrfmiddlewaretoken" value="bBtYbxitU8dVr10dS5vwt9LClEKpCVRYFRMBhKwaCL4kvUGnaTg4gpUbr4RQRRgt">
 
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" required>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
 
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
 
-    <input type="submit" value="Login">
-  </form>
-
-  {% if error %}
-    <p style="color: red;">{{ error }}</p>
-  {% endif %}
-
+        <input type="submit" value="Login">
+      </form>
+    </div>
+  </div>
 </body>
 </html>
+
