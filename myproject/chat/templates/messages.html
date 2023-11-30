@@ -11,13 +11,27 @@
 
         <link rel="stylesheet" href="{% static 'css/messages.css' %}">
 
+<style>
+        /* Centered buttons */
+        .centered-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .centered-buttons .btn {
+            margin: 0 5px;
+        }
+    </style>
     </head>
 	<!--Coded With Love By Mutiullah Samim-->
 	<body>
 	
         <!-- ... your existing content ... -->
+        <div class="centered-buttons">
         <a href="{% url 'admin:login' %}?next=/admin/" target="_blank" class="btn btn-primary">Create New User</a>
         <a href="{% url 'logout' %}" class="btn btn-danger">Logout</a>
+    </div>
         {% if user.is_authenticated %}
             <h1 style="text-align: end; padding-right: 10px">Logged in as: {{ user.username }}</h1>
             <input type="hidden" id="logged-in-user" value="{{ user.id }}">
