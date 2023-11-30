@@ -14,13 +14,17 @@
     </head>
 	<!--Coded With Love By Mutiullah Samim-->
 	<body>
-	<a href="{% url 'admin:login' %}?next=/admin/" target="_blank">Create New User</a>
-	<br>
-	<a href="{% url 'logout' %}">Logout</a>	
-    {% if user.is_authenticated %}
-        <h1 style="text-align: end; padding-right: 10px">Logged in as : {{ user.username }}</h1>
-        <input type="hidden" id="logged-in-user" value="{{ user.id }}">
-    {% endif %}
+	
+        <!-- ... your existing content ... -->
+        <a href="{% url 'admin:login' %}?next=/admin/" target="_blank" class="btn btn-primary">Create New User</a>
+        <a href="{% url 'logout' %}" class="btn btn-danger">Logout</a>
+        {% if user.is_authenticated %}
+            <h1 style="text-align: end; padding-right: 10px">Logged in as: {{ user.username }}</h1>
+            <input type="hidden" id="logged-in-user" value="{{ user.id }}">
+        {% endif %}
+        <!-- ... your existing content ... -->
+   
+	
 		<div class="container-fluid h-100">
 			<div class="row justify-content-center h-100 ">
 				<div class="col-md-4 col-xl-3 chat h-100 mt-4">
