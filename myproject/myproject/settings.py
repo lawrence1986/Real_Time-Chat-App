@@ -129,6 +129,7 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+HANDLER404 = 'chat.views.handle_404'
 
 CHANNEL_LAYERS = {
         'default': {

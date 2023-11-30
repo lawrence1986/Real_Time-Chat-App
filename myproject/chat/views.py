@@ -31,6 +31,8 @@ def user_logout(request):
     logout(request)
     return redirect('login')
 
+def handle_404(request, unknown_path):
+    return render(request, '404.html', status=404)
 
 def user_search(request):
     if 'q' in request.GET:
