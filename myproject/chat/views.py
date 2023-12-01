@@ -4,6 +4,7 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import login, logout
 from django.contrib.auth.models import User
 from chat.models import Thread
+from django.http import HttpResponse
 
 
 @login_required
@@ -31,8 +32,8 @@ def user_logout(request):
     logout(request)
     return redirect('login')
 
-def handle_404(request, unknown_path):
-    return render(request, '404.html', status=404)
+def handle_404(request):
+    return render(request, '404.html', {})
 
 def user_search(request):
     if 'q' in request.GET:

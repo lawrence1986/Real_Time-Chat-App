@@ -8,5 +8,5 @@ urlpatterns = [
     path('user_logout/', user_logout, name='logout'),
     path('user_search/', user_search, name='user_search'),
     path('start_chat/<int:user_id>/', start_chat, name='start_chat'),
-    path('404/', handle_404, name='handle_404'),
+    path('404.html', handle_404, name='handle_404'),
 ]
