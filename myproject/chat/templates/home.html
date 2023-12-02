@@ -81,6 +81,29 @@
             background-color: #007bff;
         }
 
+        .hero-icons {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            transform: translateY(-50%);
+        }
+
+        .hero-icon {
+            display: inline-block;
+            width: 50px; /* Adjust the size as needed */
+            height: auto;
+            margin: 0 10px; /* Adjust the spacing as needed */
+        }
+
+        .hero-image-left {
+            float: left;
+        }
+
+        .hero-image-right {
+            float: right;
+        }
+
         .features {
             background-color: #f0f0f0;
             padding: 40px 20px;
@@ -124,6 +147,14 @@
     </div>
     <marquee><h2>Welcome to the Best Chat App</h2></marquee>
     <div class="hero">
+        <div class="hero-icons">
+            <div class="hero-icon hero-image-left">
+                <img src="https://github.com/lawrence1986/Real_Time-Chat-App/blob/main/myproject/chat/templates/HeyU.png?raw=true" alt="Left Icon" style="width: 350px; height: 350px;">
+            </div>
+            <div class="hero-icon hero-image-right">
+                <img src="https://github.com/lawrence1986/Real_Time-Chat-App/blob/main/myproject/chat/demo.png?raw=true" alt="Right Icon" style="width: 200px; height: 200px;">
+            </div>
+        </div>
         <h1>Connect with other employees<br>privately with heyU</h1>
         <p>heyU is the easiest way to chat with other<br>employees on a secure platform.</p>
         <a href="{% url 'login' %}" class="button">Get Started</a>
