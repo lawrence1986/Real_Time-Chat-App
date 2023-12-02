@@ -29,6 +29,7 @@
 	
         <!-- ... your existing content ... -->
         <div class="centered-buttons">
+	<a href ="{% url 'home' %}" class='btn btn-primary'>Home</a>
         <a href="{% url 'admin:login' %}?next=/admin/" target="_blank" class="btn btn-primary">Create New User</a>
         <a href="{% url 'logout' %}" class="btn btn-danger">Logout</a>
     </div>

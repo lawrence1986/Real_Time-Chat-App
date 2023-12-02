@@ -3,195 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat App</title>
+    <title>heyU - Chat App</title>
     <link rel="stylesheet" href="style.css">
     <style>
 body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-color: #f5f5f5;
-            color: #333;
-        }
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-        header {
-            background-color: #3498db;
-            padding: 20px;
-            color: white;
-        }
+.header {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+.logo {
+    float: left;
+}
 
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
+.login {
+    float: right;
+}
+.login-button {
+    background-color: #009688;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
 
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
+.login-button:hover {
+    background-color: #007bff;
+}
 
-        nav li {
-            display: inline-block;
-            margin-right: 20px;
-        }
+.hero {
+    background-color: #007bff;
+    color: #fff;
+    padding: 80px 0;
+    flex: 1;
+    align-items: flex-start;
+}
 
-        nav a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
+.hero h1 {
+    font-size: 24px;
+    font-weight: 600;
+}
 
-        nav a:hover {
-            color: #ecf0f1;
-        }
+.hero p {
+    font-size: 16px;
+}
 
-        .hero {
-            background-image: url('hero.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 500px;
-            color: white;
-            text-align: center;
-            padding: 100px 0;
-        }
+.button {
+    background-color: #009688;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
 
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
+.features {
+    background-color: #f0f0f0;
+    padding: 40px 0;
+}
 
-        .hero p {
-            font-size: 18px;
-        }
+.features h2 {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
 
-        .btn {
-            background-color: #2ecc71;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
+.features ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
 
-        .btn:hover {
-            background-color: #27ae60;
-        }
+.features li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
 
-        .features {
-            background-color: #ecf0f1;
-            padding: 50px 0;
-        }
+footer {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
 
-        .features h2 {
-            color: #333;
-        }
-
-        .features ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .features li {
-            font-size: 16px;
-            margin-bottom: 10px;
-        }
-
-        .testimonials {
-            background-color: #3498db;
-            color: white;
-            padding: 50px 0;
-        }
-
-        .testimonial {
-            margin-bottom: 30px;
-        }
-
-        .testimonial p {
-            font-style: italic;
-        }
-
-        .author img {
-            border-radius: 50%;
-            margin-right: 10px;
-        }
-
-        footer {
-            background-color: #34495e;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
 </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <h1>Chat App</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="{% url 'login' %}">Login</a></li>
-                </ul>
-            </nav>
+    <div class="header">
+        <div class="logo">
+            <img src="ht" alt="heyU logo">
         </div>
-    </header>
-
-    <main>
-        <div class="hero">
-            <div class="container">
-                <h1>Connect with anyone, anytime, anywhere.</h1>
-                <p>Chat App is the easiest way to stay connected with your friends, family, and colleagues.</p>
-            </div>
+        <div class="login">
+		<a href={% url 'home' %} class="login-button">Home</a>
+		<a href={% url 'login' %} class="login-button">Login</a>
         </div>
+    </div>
 
-        <section class="features">
-            <div class="container">
-                <h2>Features</h2>
-                <ul>
-                    <li>Real-time messaging</li>
-                    <li>Group chats</li>
-                    <li>Voice and video calls</li>
-                    <li>File sharing</li>
-                    <li>Cross-platform compatibility</li>
-                </ul>
-            </div>
-        </section>
+    <div class="hero">
+	    <h1>Connect with other employees<br>privately with heyU</h1>
+	    <p>heyU is the easiest way to chat with other<br>employees on a secure platform.</p>
+	    <a href="{% url 'login' %}" class="button">Get Started</a>
+    </div>
 
-        <section class="testimonials">
-            <div class="container">
-                <h2>What people are saying</h2>
-                <div class="testimonial">
-                    <p>"Chat App has made it so easy to stay in touch with my loved ones, no matter where they are in the world."</p>
-                    <div class="author">
-                        <img src="user1.jpg" alt="User 1">
-                        <p>Sarah Jones</p>
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <p>"I use Chat App for work and it has been a lifesaver. I can easily communicate with my team members, even when we're not in the same office."</p>
-                    <div class="author">
-                        <img src="user2.jpg" alt="User 2">
-                        <p>John Doe</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+    <div class="features">
+        <h2>heyU Features</h2>
+        <ul>
+            <li>Free to use</li>
+            <li>Works on all devices</li>
+            <li>Group chats</li>
+            <li>Voice and video calls</li>
+            <li>File sharing</li>
+        </ul>
+    </div>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2023 Chat App</p>
-        </div>
+        <p>&copy; 2023 heyU</p>
     </footer>
 </body>
 </html>
