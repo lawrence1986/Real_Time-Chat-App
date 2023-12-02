@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #3498db;
+            padding: 20px;
+            color: white;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ecf0f1;
+        }
+
+        .hero {
+            background-image: url('hero.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+
+        .btn {
+            background-color: #2ecc71;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #27ae60;
+        }
+
+        .features {
+            background-color: #ecf0f1;
+            padding: 50px 0;
+        }
+
+        .features h2 {
+            color: #333;
+        }
+
+        .features ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .features li {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .testimonials {
+            background-color: #3498db;
+            color: white;
+            padding: 50px 0;
+        }
+
+        .testimonial {
+            margin-bottom: 30px;
+        }
+
+        .testimonial p {
+            font-style: italic;
+        }
+
+        .author img {
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+</style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Chat App</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'login' %}">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <div class="container">
+                <h1>Connect with anyone, anytime, anywhere.</h1>
+                <p>Chat App is the easiest way to stay connected with your friends, family, and colleagues.</p>
+            </div>
+        </div>
+
+        <section class="features">
+            <div class="container">
+                <h2>Features</h2>
+                <ul>
+                    <li>Real-time messaging</li>
+                    <li>Group chats</li>
+                    <li>Voice and video calls</li>
+                    <li>File sharing</li>
+                    <li>Cross-platform compatibility</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <h2>What people are saying</h2>
+                <div class="testimonial">
+                    <p>"Chat App has made it so easy to stay in touch with my loved ones, no matter where they are in the world."</p>
+                    <div class="author">
+                        <img src="user1.jpg" alt="User 1">
+                        <p>Sarah Jones</p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"I use Chat App for work and it has been a lifesaver. I can easily communicate with my team members, even when we're not in the same office."</p>
+                    <div class="author">
+                        <img src="user2.jpg" alt="User 2">
+                        <p>John Doe</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Chat App</p>
+        </div>
+    </footer>
+</body>
+</html>
