@@ -6,94 +6,110 @@
     <title>heyU - Chat App</title>
     <link rel="stylesheet" href="style.css">
     <style>
-body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-}
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
 
-.header {
-    background-color: #f0f0f0;
-    padding: 20px;
-}
+        .header {
+            background-color: #f0f0f0;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-.logo {
-    float: left;
-}
+        .logo img {
+            max-width: 100px;
+            height: auto;
+        }
 
-.login {
-    float: right;
-}
-.login-button {
-    background-color: #009688;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-weight: bold;
-}
+        .login a {
+            text-decoration: none;
+            margin-left: 20px;
+        }
 
-.login-button:hover {
-    background-color: #007bff;
-}
+        .login-button {
+            background-color: #009688;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
 
-.hero {
-    background-color: #007bff;
-    color: #fff;
-    padding: 80px 0;
-    flex: 1;
-    align-items: flex-start;
-}
+        .login-button:hover {
+            background-color: #007bff;
+        }
 
-.hero h1 {
-    font-size: 24px;
-    font-weight: 600;
-}
+        .hero {
+            background-color: #007bff;
+            color: #fff;
+            padding: 80px 20px;
+            text-align: center;
+        }
 
-.hero p {
-    font-size: 16px;
-}
+        .hero h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
 
-.button {
-    background-color: #009688;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
 
-.features {
-    background-color: #f0f0f0;
-    padding: 40px 0;
-}
+        .button {
+            background-color: #009688;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
 
-.features h2 {
-    font-size: 24px;
-    font-weight: 600;
-    text-align: center;
-}
+        .button:hover {
+            background-color: #007bff;
+        }
 
-.features ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
+        .features {
+            background-color: #f0f0f0;
+            padding: 40px 20px;
+            text-align: center;
+        }
 
-.features li {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
+        .features h2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
 
-footer {
-    background-color: #007bff;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
+        .features ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
 
-</style>
+        .features li {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <div class="header">
@@ -101,15 +117,15 @@ footer {
             <img src="ht" alt="heyU logo">
         </div>
         <div class="login">
-		<a href={% url 'home' %} class="login-button">Home</a>
-		<a href={% url 'login' %} class="login-button">Login</a>
+            <a href={% url 'home' %} class="login-button">Home</a>
+            <a href={% url 'login' %} class="login-button">Login</a>
         </div>
     </div>
 
     <div class="hero">
-	    <h1>Connect with other employees<br>privately with heyU</h1>
-	    <p>heyU is the easiest way to chat with other<br>employees on a secure platform.</p>
-	    <a href="{% url 'login' %}" class="button">Get Started</a>
+        <h1>Connect with other employees<br>privately with heyU</h1>
+        <p>heyU is the easiest way to chat with other<br>employees on a secure platform.</p>
+        <a href="{% url 'login' %}" class="button">Get Started</a>
     </div>
 
     <div class="features">
@@ -117,7 +133,7 @@ footer {
         <ul>
             <li>Free to use</li>
             <li>Works on all devices</li>
-	     <li>Privacy</li>
+            <li>Privacy</li>
         </ul>
     </div>
 
