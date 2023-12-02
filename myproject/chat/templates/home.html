@@ -47,10 +47,11 @@
         }
 
         .hero {
-            background-color: #007bff;
+            background: url('https://github.com/lawrence1986/Real_Time-Chat-App/blob/main/myproject/chat/templates/banner2.jpg?raw=true') center/cover no-repeat;
             color: #fff;
             padding: 80px 20px;
             text-align: center;
+            position: relative;
         }
 
         .hero h1 {
@@ -113,10 +114,10 @@
 </head>
 <body>
     <div class="header">
-	    <div class="logo">
-  <img src="https://github.com/lawrence1986/Real_Time-Chat-App/blob/main/myproject/chat/templates/demo.png?raw=true" alt="Chat Icon" style="width: 80px; height: 80px;">
-</div>
-            <div class="login">
+        <div class="logo">
+            <img src="https://github.com/lawrence1986/Real_Time-Chat-App/blob/main/myproject/chat/templates/demo.png?raw=true" alt="Chat Icon" style="width: 80px; height: 80px;">
+        </div>
+        <div class="login">
             <a href={% url 'home' %} class="login-button">Home</a>
             <a href={% url 'login' %} class="login-button">Login</a>
         </div>
