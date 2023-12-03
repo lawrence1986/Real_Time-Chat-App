@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>heyU - Chat App</title>
     <link rel="stylesheet" href="style.css">
+	<!-- Include Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -132,10 +136,32 @@
             list-style-type: none;
             padding: 0;
             margin: 0;
+            display: flex;
+            justify-content: space-around; /* Adjust the spacing between columns */
+            flex-wrap: wrap; /* Allow items to wrap to the next line on small screens */
         }
 
         .features li {
             font-size: 18px;
+            margin-bottom: 10px;
+            position: relative;
+            flex: 0 0 30%; /* Adjust the width of each column */
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+        }
+		
+		.features li::before {
+            content: '\2022'; /* Bullet point */
+            color: #009688;
+            font-size: 20px;
+            position: absolute;
+            left: -20px;
+        }
+		
+		.icon {
+            font-size: 24px;
             margin-bottom: 10px;
         }
 
@@ -192,11 +218,29 @@
     <div class="features">
         <h2>heyU Features</h2>
         <ul>
-            <li>Free to use</li>
-            <li>Works on all devices</li>
-            <li>Privacy</li>
+            <li>
+                <i class="icon fas fa-check"></i>
+                Free to use
+            </li>
+            <li>
+                <i class="icon fas fa-mobile-alt"></i>
+                Works on all devices
+            </li>
+            <li>
+                <i class="icon fas fa-lock"></i>
+                Privacy
+            </li>
         </ul>
     </div>
+	<!-- Include Font Awesome and Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<!-- Include Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
      <footer>
 	     <p>© 2023 heyU. All Rights Reserved. Team Project by: Abdullahi Ngui & Lawrence Maduabuchi</p>    </footer>
 </body>
