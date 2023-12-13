@@ -30,8 +30,9 @@
 <h3>LAUNCH IP ON BROWSER</h3>
 <p align="center"><img src="https://github.com/lawrence1986/Real_Time-Chat-App/blob/main/LAUNCH%20IP%20ON%20BROWSER.png?raw=true" alt="Left Icon" style="width: 1277px; height: 216px;"></p>
 </hr>
+<hr>Home URL: http://127.0.0.1:8000/chat/home/ </hr>
 <hr>
-<h3> Login Page</h3>
+<h3> Login Page URL: http://127.0.0.1:8000/chat/user_login/ </h3>
 <p align="center"><img src="https://github.com/lawrence1986/Real_Time-Chat-App/blob/main/login%20page.png?raw=true" alt="Left Icon" style="width: 600px; height: 400px;"></p>
 </hr>
 </h3>
