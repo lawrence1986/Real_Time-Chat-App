@@ -47,3 +47,6 @@ Author ✒️
 </hr>
 <li>Lawrence Maduabuchi</li>
 <li>Abdullahi Ngui</li>
+
+<hr>License 🔒
+This project is licensed under the MIT License - see the LICENSE file for details.</hr>
