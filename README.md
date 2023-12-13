@@ -40,7 +40,7 @@ Chat Application URL: http://127.0.0.1:8000/chat/messages/
 </hr><p></p>
 <p align="center"><img src="https://github.com/lawrence1986/Real_Time-Chat-App/blob/main/myproject/chat/templates/HeyU.png?raw=true" alt="Left Icon" style="width: 350px; height: 350px;"></p>
 <hr><h5>Blog Article 📰</h5>
-<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7140592883966926848" height="585" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7140592883966926848
 </hr>
 <hr>
 Author ✒️
