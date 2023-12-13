@@ -8,10 +8,6 @@
 <h3 align="center"> development of a feature-rich Chat Web Application 💻, that harnesses the power of Vue.js  🏗🏛 django-notifs 🎙, RabbitMQ, and uWSGI!</h3>
 <hr>
  
-
-<hr>
-<img src="https://github.com/lawrence1986/Real_Time-Chat-App/blob/main/home%20page.png?raw=true" alt="Left Icon" style="width: 1367px; height: 513px;">
-</hr>
 <br>Steps in Running the Web Chat Application</br>
 
 <l1> 1.	Clone the repo <b>https://github.com/lawrence1986/Real_Time-Chat-App.git</b></l1><br>
@@ -31,6 +27,9 @@
 <p align="center"><img src="https://github.com/lawrence1986/Real_Time-Chat-App/blob/main/LAUNCH%20IP%20ON%20BROWSER.png?raw=true" alt="Left Icon" style="width: 1277px; height: 216px;"></p>
 </hr>
 <hr>Home URL: http://127.0.0.1:8000/chat/home/ </hr>
+<hr>
+<img src="https://github.com/lawrence1986/Real_Time-Chat-App/blob/main/home%20page.png?raw=true" alt="Left Icon" style="width: 1367px; height: 513px;">
+</hr>
 <hr>
 <h3> Login Page URL: http://127.0.0.1:8000/chat/user_login/ </h3>
 <p align="center"><img src="https://github.com/lawrence1986/Real_Time-Chat-App/blob/main/login%20page.png?raw=true" alt="Left Icon" style="width: 600px; height: 400px;"></p>
