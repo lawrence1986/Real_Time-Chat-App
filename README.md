@@ -26,7 +26,10 @@
 <h3>RUN SERVER PROCESS</h3>
 
 <l1> 9.	<b>python manage.py runserver</b></l1>
-
+<hr>
+<h3> Login Page</h3>
+<p align="center"><img src="https://github.com/lawrence1986/Real_Time-Chat-App/blob/main/login%20page.png?raw=true" alt="Left Icon" style="width: 1202px; height: 603px;"></p>
+</hr>
 </h3>
 <p align="center"><img src="https://github.com/lawrence1986/Real_Time-Chat-App/blob/main/myproject/chat/templates/HeyU.png?raw=true" alt="Left Icon" style="width: 350px; height: 350px;"></p>
 
