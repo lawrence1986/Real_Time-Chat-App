@@ -37,6 +37,6 @@
 </h3>
 <hr>
 Chat Application URL: http://127.0.0.1:8000/chat/messages/
-</hr>
+</hr><p></p>
 <p align="center"><img src="https://github.com/lawrence1986/Real_Time-Chat-App/blob/main/myproject/chat/templates/HeyU.png?raw=true" alt="Left Icon" style="width: 350px; height: 350px;"></p>
 
