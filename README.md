@@ -7,7 +7,7 @@
 </p>
 <h3 align="center"> development of a feature-rich Chat Web Application 💻, that harnesses the power of Vue.js  🏗🏛 django-notifs 🎙, RabbitMQ, and uWSGI!</h3>
 <hr>
- <align="center"><img src="https://github.com/lawrence1986/Real_Time-Chat-App/blob/main/myproject/chat/templates/HeyU.png?raw=true" alt="Left Icon" style="width: 350px; height: 350px;">
+ 
 
 <hr></hr>
 <br>Steps in Running the Web Chat Application</br>
@@ -26,4 +26,5 @@
 <l1> 9.	<b>python manage.py runserver</b></l1>
 
 </h3>
+<p align="center"><img src="https://github.com/lawrence1986/Real_Time-Chat-App/blob/main/myproject/chat/templates/HeyU.png?raw=true" alt="Left Icon" style="width: 350px; height: 350px;"></p>
 
