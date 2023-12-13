@@ -31,7 +31,7 @@
 <img src="https://github.com/lawrence1986/Real_Time-Chat-App/blob/main/home%20page.png?raw=true" alt="Left Icon" style="width: 1367px; height: 513px;">
 </hr>
 <hr>
-<h3> Login Page URL: http://127.0.0.1:8000/chat/user_login/ </h3>
+Login Page URL: http://127.0.0.1:8000/chat/user_login/
 <p align="center"><img src="https://github.com/lawrence1986/Real_Time-Chat-App/blob/main/login%20page.png?raw=true" alt="Left Icon" style="width: 600px; height: 400px;"></p>
 </hr>
 </h3>
