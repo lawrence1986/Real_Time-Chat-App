@@ -7,7 +7,7 @@
 </p>
 <h3 align="center"> development of a feature-rich Chat Web Application 💻, that harnesses the power of Vue.js  🏗🏛 django-notifs 🎙, RabbitMQ, and uWSGI!</h3>
 <hr>
-<img src="https://github.com/lawrence1986/Real_Time-Chat-App/blob/main/mobileheyU.png</a>
+<img src="https://github.com/lawrence1986/Real_Time-Chat-App/blob/main/myproject/chat/templates/demo.png?raw=true" alt="Chat Icon" style="width: 80px; height: 80px;">
 <hr></hr>
 <br>Steps in Running the Web Chat Application</br>
 
