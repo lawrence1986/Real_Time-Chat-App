@@ -28,7 +28,7 @@
 <l1> 9.	<b>python manage.py runserver</b></l1>
 <hr>
 <h3> Login Page</h3>
-<p align="center"><img src="https://github.com/lawrence1986/Real_Time-Chat-App/blob/main/login%20page.png?raw=true" alt="Left Icon" style="width: 500px; height: 500px;"></p>
+<p align="center"><img src="https://github.com/lawrence1986/Real_Time-Chat-App/blob/main/login%20page.png?raw=true" alt="Left Icon" style="width: 1000px; height: 600px;"></p>
 </hr>
 </h3>
 <p align="center"><img src="https://github.com/lawrence1986/Real_Time-Chat-App/blob/main/myproject/chat/templates/HeyU.png?raw=true" alt="Left Icon" style="width: 350px; height: 350px;"></p>
