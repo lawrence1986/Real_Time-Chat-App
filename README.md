@@ -9,7 +9,9 @@
 <hr>
  
 
-<hr></hr>
+<hr>
+<img src="https://github.com/lawrence1986/Real_Time-Chat-App/blob/main/home%20page.png?raw=true" alt="Left Icon" style="width: 350px; height: 350px;">
+</hr>
 <br>Steps in Running the Web Chat Application</br>
 
 <l1> 1.	Clone the repo <b>https://github.com/lawrence1986/Real_Time-Chat-App.git</b></l1><br>
