@@ -49,4 +49,4 @@ Author ✒️
 <li>Abdullahi Ngui</li>
 
 <hr>License 🔒
-This project is licensed under the MIT License https://github.com/lawrence1986/Real_Time-Chat-App/blob/main/LICENSE"
+This project is licensed under the MIT License https://github.com/lawrence1986/Real_Time-Chat-App/blob/main/LICENSE
