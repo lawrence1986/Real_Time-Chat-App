@@ -10,7 +10,7 @@
  
 
 <hr>
-<img src="https://github.com/lawrence1986/Real_Time-Chat-App/blob/main/home%20page.png?raw=true" alt="Left Icon" style="width: 350px; height: 350px;">
+<img src="https://github.com/lawrence1986/Real_Time-Chat-App/blob/main/home%20page.png?raw=true" alt="Left Icon" style="width: 1367px; height: 513px;">
 </hr>
 <br>Steps in Running the Web Chat Application</br>
 
